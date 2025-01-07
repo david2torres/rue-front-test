@@ -6,17 +6,15 @@ Se requiere desarrollar una solución técnica que integre información de produ
 
 ### Objetivos:
 
- 1. Aprender a trabajar con datos simulados mediante JSON.
+1. Implementar componentes avanzados de MUI para crear una interfaz profesional y funcional.
 
-2. Implementar componentes avanzados de MUI para crear una interfaz profesional y funcional.
+2. Demostrar el flujo de trabajo completo desde la simulación de una API hasta la presentación de datos procesados en una aplicación React.
 
-3. Demostrar el flujo de trabajo completo desde la simulación de una API hasta la presentación de datos procesados en una aplicación React.
+3. Aplicar principios de SOLID y Clean Code para mantener un código estructurado, legible y escalable.
 
-4. Aplicar principios de SOLID y Clean Code para mantener un código estructurado, legible y escalable.
+4. Utilizar TypeScript para mejorar la calidad del código y reducir errores.
 
-5. Utilizar TypeScript para mejorar la calidad del código y reducir errores.
-
-6. Buena práctica de desarrollo: separación de responsabilidades, componentización, uso de hooks, etc.
+5. Buena práctica de desarrollo: separación de responsabilidades, componentización, uso de hooks, etc.
 
 ---
 
@@ -58,19 +56,11 @@ Se requiere desarrollar una solución técnica que integre información de produ
 
 ---
 
-## Entregables
-
-1. Código funcional con la implementación completa.
-2. Instrucciones claras para ejecutar el proyecto.
-3. Archivo README con los detalles del problema, solución y pasos para correr el entorno.
-
----
-
 ## Ejecución del Proyecto
 
 ### Instalación de Dependencias
 
-1. Clona este repositorio: `git clone <URL-del-repositorio>`
+1. Clona este repositorio: `git clone https://github.com/Ruedata/rue-front-test.git`
 2. Instala las dependencias: `npm install`
 
 ### Ejecución
