@@ -41,11 +41,12 @@ Se requiere desarrollar una solución técnica que integre información de produ
 
 ### 4. Creación del DataGrid y Rating
 
-- Los datos procesados deben ser organizados con los siguientes encabezados:
+- Los datos procesados deben ser organizados con los siguientes encabezados antes de ser mostrados en un `DataGrid`:
   - `Product Name`: Nombre del producto.
   - `Description`: Descripción del producto.
+  - `Price`: Precio del producto.
   - `Total Quantity`: Cantidad total en inventario.
-  - `Total Value`: Valor total calculado.
+  - `Total Price`: Valor total calculado.
   - `Average Rating`: Promedio del rating.
 
 - Usar la librería de Material-UI para crear un componente que renderice la información en un `DataGrid` y usar el componente `Rating` para mostrar el `Average Rating`.
