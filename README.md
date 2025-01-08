@@ -36,8 +36,8 @@ Se requiere desarrollar una solución técnica que integre información de produ
   - Filtrar los registros del inventario para cada `product_id`.
   - Calcular:
     - **Total Quantity:** Sumar los valores de `quantity`.
-    - **Total Value:** Multiplicar el **Total Quantity** por el `price` del producto.
-    - **Promedio Rating:** Promediar los valores de `rating`.
+    - **Total Price:** Multiplicar el **Total Quantity** por el `price` del producto.
+    - **Average Rating:** Promediar los valores de `rating`.
 
 ### 4. Creación del DataGrid y Rating
 
