@@ -42,12 +42,12 @@ Se requiere desarrollar una solución técnica que integre información de produ
 ### 4. Creación del DataGrid y Rating
 
 - Los datos procesados deben ser organizados con los siguientes encabezados antes de ser mostrados en un `DataGrid`:
-  - `Product Name`: Nombre del producto.
+  - `ProductName`: Nombre del producto.
   - `Description`: Descripción del producto.
   - `Price`: Precio del producto.
-  - `Total Quantity`: Cantidad total en inventario.
-  - `Total Price`: Valor total calculado.
-  - `Average Rating`: Promedio del rating.
+  - `TotalQuantity`: Cantidad total en inventario.
+  - `TotalPrice`: Valor total calculado.
+  - `AverageRating`: Promedio del rating.
 
 - Usar la librería de Material-UI para crear un componente que renderice la información en un `DataGrid` y usar el componente `Rating` para mostrar el `Average Rating`.
 
@@ -75,3 +75,12 @@ Se requiere desarrollar una solución técnica que integre información de produ
 
 Si necesitas más información o tienes dudas, no dudes en preguntar.
 
+# Solucion David Yomayusa
+Dentro de la solucion inicial se agregaron unos ajustes adicionales:
+- main.tsx: Se agrega Inventory como punto de partida de la aplicacion, por lo que se llama en el StrincMode para que la aplicacion arranque en ese punto
+- Se separa e independizan interfaces para tenerlas centralizadas y escalables en el folder types
+- En el componente de partida Inventory, se segrega la responsabilidad un poco mas, separando la logica del procesamiento de datos frente al llamado y render haciendo la funcion mas escalable y mantenible. Se mantiene el principio de del promise.All para garantizar la carga de la informacion que necesitamos en su totalidad para procesar la data. Una vez este el render completo del aplicativo  y la data cargada se realizan los llamados correspondientes y el renderizado de la vista.
+- ProcessData.ts es el service centralizado encargado de procesar la informacion. A modo de mantener el principio de responsabilidad Unica y manejar funciones puras, los reducer se dejan independientes con su proceso unico y se llaman una vez el processProduct os requiera.
+- Api.ts mantiene su principio de simulacion de llamados y usamos typeof a modo de mantener la simplicidad  y heredar la estructura ya existente de loss archivos .json
+- Loader sigue siendo un componente centralizado con su respectivo return.
+- el dataGrid usa la interface creada en ProcessedData para trabajar con la data ya ajustada. Se pinta la tabla de acuerdo a la libreria dada y se usa valueFormatter para dar formato a los campos de valores, los estilos implementados corresponden directamente a ayudas visuales encontradas que implementan el mismo componente.
